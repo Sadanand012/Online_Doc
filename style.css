@@ -68,11 +68,12 @@
     margin: auto;
     width: 100%;
     margin-top: 30px;
+    padding: 0 60px;
   }
 
   #works {
     margin: auto;
-    width: 80%;
+    width: 100%;
   }
 
   #works>h1 {
