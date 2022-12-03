@@ -119,19 +119,12 @@
 
   /* Small Screen */
   @media only screen and (min-width: 320px) and (max-width: 499px) {
-    /* #banner {
-      width: auto;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    } */
     #banner {
         width: 100%;
         margin: auto;
         align-items: center;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         background-color: #232c7a;
         border-radius: 20px;
         padding: 10px 10px;
