@@ -4,146 +4,151 @@
   background: #6ce5cb9f;
 }
 
+#banner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #232c7a;
+  border-radius: 20px;
+  padding: 0px 40px;
+}
+
+#banner>div>img {
+  height: 250px;
+}
+
+#banner>div:nth-child(1) {
+  color: white;
+  margin: 50px 30px;
+  line-height: 30px;
+  text-align: left;
+}
+
+button {
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+#services {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#services>div {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#services>div>div>img {
+  width: 200px;
+  height: 200px;
+  background-color: #aecfed;
+}
+
+#services>div>div:nth-child(2) {
+  text-align: start;
+  padding: 20px;
+}
+
+h3+p {
+  color: gray;
+}
+
+#works>div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 60px;
+}
+
+#works {
+  margin: auto;
+  width: 100%;
+}
+
+#works>h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#works>p {
+  text-align: center;
+}
+
+#works>div>div>img {
+  width: 250px;
+  height: 250px;
+}
+
+#works>div>div {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 20px;
+}
+
+
+
+/* Medium Screen */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   #banner {
-    width: 80%;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
-    background-color: #232c7a;
-    border-radius: 20px;
-    padding: 0px 40px;
-  }
-
-  #banner>div>img {
-    height: 250px;
-  }
-
-  #banner>div:nth-child(1) {
-    color: white;
-    margin: 50px 30px;
-    line-height: 30px;
-    text-align: left;
-  }
-
-  button {
-    padding: 10px 10px;
-    border-radius: 20px;
+    flex-direction: column;
   }
 
   #services {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    gap: 10px;
-    justify-content: space-evenly;
-  }
-
-  #services>div {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-
-  #services>div>div>img {
-    width: 200px;
-    height: 200px;
-    background-color: #aecfed;
-  }
-
-  #services>div>div:nth-child(2) {
-    text-align: start;
-    padding: 20px;
-  }
-
-  h3+p {
-    color: gray;
-  }
-
-  #works>div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    margin: auto;
-    margin-top: 30px;
-    padding: 0 60px;
-  }
-
-  #works {
-    margin: auto;
-    width: 100%;
-  }
-
-  #works>h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  #works>p {
-    text-align: center;
-  }
-
-  #works>div>div>img {
-    width: 250px;
-    height: 250px;
-  }
-
-  #works>div>div {
-    margin-top: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 20px;
-  }
-
-
-
-  /* Medium Screen */
-  @media only screen and (min-width: 500px) and (max-width: 768px) {
-    #banner {
-      display: flex;
-      flex-direction: column;
-    }
-    #services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
+
   #works>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+  #banner {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #232c7a;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 3px red solid;
   }
 
-  /* Small Screen */
-  @media only screen and (min-width: 320px) and (max-width: 499px) {
-    #banner {
-        width: 100%;
-        margin: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        background-color: #232c7a;
-        border-radius: 20px;
-        padding: 10px 10px;
-        border: 3px red solid;
-      }
-    #banner>div>img {
+  #banner>div>img {
     height: 200px;
   }
-    #services {
-      width: 100%;
+
+  #services {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
+
   #works>div {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
-  
-  }
+
+}
