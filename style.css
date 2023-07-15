@@ -153,3 +153,10 @@ h3+p {
 
 }
 /* footer */
+footer{
+  display: block;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+}
