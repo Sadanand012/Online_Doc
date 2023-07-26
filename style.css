@@ -159,9 +159,10 @@ footer{
   text-align: center;
   height: 30px;
 }
+
 footer p{
   margin-top: 5px;
   color: #232c7a;
   text-decoration-style: solid;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
